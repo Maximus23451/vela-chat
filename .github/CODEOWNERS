@@ -1,0 +1,5 @@
+# CODEOWNERS — placeholder owner.
+# Replace @vela-maintainers with the real GitHub user or team that should
+# review changes (e.g. @your-org/android-team or @your-username).
+# Reference: https://docs.github.com/en/repositories/managing-a-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+* @vela-maintainers

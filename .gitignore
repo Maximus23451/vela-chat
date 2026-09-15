@@ -1,0 +1,31 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/build/
+/app/release/
+*.apk
+*.aab
+*.keystore
+!debug.keystore
+
+# Signing — never commit keystores or their credentials
+*.jks
+keystore.properties
+
+# Local-only infrastructure notes and artifacts
+docs/*.local.md
+/out/
+/.mimosa/
+/.kotlin/
+/.v2c/
+*.hprof
+
+# Private scan patterns for scripts/check-secrets.sh (real IPs, hostnames, names)
+docs/*.local.txt

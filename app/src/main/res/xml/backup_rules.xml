@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- The encrypted preferences holding API keys are excluded from cloud
+         backup because the Keystore master key is device-bound. -->
+    <exclude domain="sharedpref" path="vela_secure_prefs.xml" />
+    <!-- Chat history, API profile base URLs (tailnet topology) and personas —
+         data-minimization: this device's own data stays off the cloud backup.
+         WAL/journal siblings included since Room defaults to WAL mode. -->
+    <exclude domain="database" path="vela.db" />
+    <exclude domain="database" path="vela.db-wal" />
+    <exclude domain="database" path="vela.db-shm" />
+    <exclude domain="database" path="vela.db-journal" />
+</full-backup-content>
